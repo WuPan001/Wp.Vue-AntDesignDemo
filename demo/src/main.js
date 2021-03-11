@@ -4,8 +4,10 @@ import App from './App.vue'
 //引入antd
 import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
-Vue.config.productionTip = false
 
+import echarts from 'echarts';
+Vue.config.productionTip = false
+Vue.prototype.$echarts = echarts;
 //全局引入
 Vue.use(Antd);
 new Vue({

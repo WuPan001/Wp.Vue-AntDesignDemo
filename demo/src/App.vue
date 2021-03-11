@@ -3,29 +3,6 @@
     <a-layout-sider v-model="collapsed" collapsible>
       <div class="logo" />
       <a-menu theme="dark" :default-selected-keys="['1']" mode="inline">
-        <!-- <a-menu-item key="1">
-          <a-icon type="pie-chart" />
-          <span>Option 1</span>
-        </a-menu-item>
-        <a-menu-item key="2">
-          <a-icon type="desktop" />
-          <span>Option 2</span>
-        </a-menu-item>
-          </a-sub-menu>
-        <a-sub-menu key="sub2">
-          <span slot="title"><a-icon type="team" /><span>Team</span></span>
-          <a-menu-item key="6"> Team 1 </a-menu-item>
-          <a-menu-item key="8"> Team 2 </a-menu-item>
-        </a-sub-menu>
-        <a-sub-menu key="sub2">
-          <span slot="title"><a-icon type="team" /><span>Team</span></span>
-          <a-menu-item key="6"> Team 1 </a-menu-item>
-          <a-menu-item key="8"> Team 2 </a-menu-item>
-        </a-sub-menu>
-        <a-menu-item key="9">
-          <a-icon type="file" />
-          <span>File</span>
-        </a-menu-item> -->
         <a-menu-item
           v-for="nav in navigations"
           :key="nav.name"
@@ -45,11 +22,11 @@
     </a-layout-sider>
     <a-layout>
       <a-layout-header style="background: #fff; padding: 0" />
-      <a-layout-content style="margin: 0 16px">
-        <a-breadcrumb style="margin: 16px 0">
+      <a-layout-content style="margin: 16px">
+        <!-- <a-breadcrumb style="margin: 16px 0">
           <a-breadcrumb-item>User</a-breadcrumb-item>
           <a-breadcrumb-item>Bill</a-breadcrumb-item>
-        </a-breadcrumb>
+        </a-breadcrumb> -->
         <div
           :style="{ padding: '24px', background: '#fff', minHeight: '760px' }"
         >
@@ -69,6 +46,7 @@ import UserMgt from "./components/UserMgt.vue";
 import AboutUs from "./components/AboutUs.vue";
 import Main from "./components/Main.vue";
 import Test from "./components/Test.vue";
+import TestEChart from "./components/testEChart.vue";
 var $navigations = [
   {
     name: "UserMgt",
@@ -87,6 +65,10 @@ var $tests = [
   {
     name: "Main",
     template: Main,
+  },
+  {
+    name: "TestEChart",
+    template: TestEChart,
   },
 ];
 export default {
