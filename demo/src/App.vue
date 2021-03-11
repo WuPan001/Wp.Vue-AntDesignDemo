@@ -47,6 +47,7 @@ import AboutUs from "./components/AboutUs.vue";
 import Main from "./components/Main.vue";
 import Test from "./components/Test.vue";
 import TestEChart from "./components/TestEChart.vue";
+import TestEChart0 from "./components/TestEChart0.vue";
 var $navigations = [
   {
     name: "UserMgt",
@@ -69,6 +70,10 @@ var $tests = [
   {
     name: "TestEChart",
     template: TestEChart,
+  },
+  {
+    name: "TestEChart0",
+    template: TestEChart0,
   },
 ];
 export default {
