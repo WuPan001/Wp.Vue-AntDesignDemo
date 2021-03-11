@@ -46,7 +46,7 @@ import UserMgt from "./components/UserMgt.vue";
 import AboutUs from "./components/AboutUs.vue";
 import Main from "./components/Main.vue";
 import Test from "./components/Test.vue";
-import TestEChart from "./components/testEChart.vue";
+import TestEChart from "./components/TestEChart.vue";
 var $navigations = [
   {
     name: "UserMgt",
